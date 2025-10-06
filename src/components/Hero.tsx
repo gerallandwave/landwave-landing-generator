@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import landwaveIcon from "@/assets/landwave-icon.png";
+import landwaveIcon from "@/assets/landwave-logo-icon.png";
 
 const Hero = () => {
   return (

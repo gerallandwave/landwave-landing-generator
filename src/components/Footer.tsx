@@ -1,4 +1,4 @@
-import landwaveIcon from "@/assets/landwave-icon.png";
+import landwaveIcon from "@/assets/landwave-logo-icon.png";
 import { Button } from "@/components/ui/button";
 import { ArrowUp } from "lucide-react";
 
