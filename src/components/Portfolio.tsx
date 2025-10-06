@@ -5,18 +5,18 @@ import mockupConsulting from "@/assets/mockup-consulting.jpg";
 
 const projects = [
   {
-    title: "Tech Startup",
-    category: "Landing Page SaaS",
+    title: "Landing Page Corporativa",
+    category: "Empresas & Startups",
     image: mockupSaas,
   },
   {
-    title: "E-commerce",
-    category: "Landing Page Produto",
+    title: "Landing Page Promocional",
+    category: "Lançamentos & Campanhas",
     image: mockupEcommerce,
   },
   {
-    title: "Consultoria",
-    category: "Landing Page Serviços",
+    title: "Landing Page Profissional",
+    category: "Serviços & Consultoria",
     image: mockupConsulting,
   },
 ];
