@@ -1,34 +1,41 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { ExternalLink } from "lucide-react";
+import mockupSaas from "@/assets/mockup-saas.jpg";
+import mockupEcommerce from "@/assets/mockup-ecommerce.jpg";
+import mockupConsulting from "@/assets/mockup-consulting.jpg";
 
 const projects = [
   {
     title: "Tech Startup",
-    category: "SaaS",
-    gradient: "from-blue-500 to-purple-600",
+    category: "SaaS Dashboard",
+    image: mockupSaas,
   },
   {
     title: "E-commerce",
-    category: "Produto",
-    gradient: "from-purple-500 to-pink-600",
+    category: "Produto Premium",
+    image: mockupEcommerce,
   },
   {
     title: "Consultoria",
-    category: "Serviços",
-    gradient: "from-cyan-500 to-blue-600",
+    category: "Serviços Profissionais",
+    image: mockupConsulting,
   },
 ];
 
 const Portfolio = () => {
   return (
-    <section className="py-24 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16 space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold">
+    <section className="py-32 bg-background relative">
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-accent/5 to-transparent" />
+      
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="text-center mb-20 space-y-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-sm text-primary font-medium mb-4">
+            ✨ Portfolio
+          </div>
+          <h2 className="text-5xl md:text-6xl font-bold">
             Resultados que fazem ondas.
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Landing pages que convertem visitantes em clientes.
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            Landing pages que convertem visitantes em clientes reais.
           </p>
         </div>
         
@@ -36,17 +43,19 @@ const Portfolio = () => {
           {projects.map((project, index) => (
             <Card 
               key={index}
-              className="group overflow-hidden border-2 hover:border-primary/50 transition-all duration-300 cursor-pointer hover:shadow-[0_20px_50px_-10px_hsl(var(--primary)/.3)]"
+              className="group overflow-hidden border-2 border-border/50 hover:border-primary/50 transition-all duration-300 cursor-pointer hover:shadow-[0_20px_60px_-10px_hsl(var(--primary)/.4)] bg-card/50 backdrop-blur-sm"
             >
               <CardContent className="p-0">
-                <div className={`h-64 bg-gradient-to-br ${project.gradient} relative overflow-hidden`}>
-                  <div className="absolute inset-0 bg-grid-white/10 [mask-image:radial-gradient(white,transparent_70%)]" />
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 backdrop-blur-sm">
-                    <ExternalLink className="h-12 w-12 text-white" />
-                  </div>
+                <div className="relative h-72 overflow-hidden bg-muted">
+                  <img 
+                    src={project.image} 
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-300" />
                 </div>
                 <div className="p-6 space-y-2">
-                  <h3 className="text-xl font-semibold">{project.title}</h3>
+                  <h3 className="text-2xl font-semibold">{project.title}</h3>
                   <p className="text-sm text-muted-foreground">{project.category}</p>
                 </div>
               </CardContent>

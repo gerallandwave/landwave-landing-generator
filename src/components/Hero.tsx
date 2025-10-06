@@ -4,44 +4,61 @@ import landwaveLogo from "@/assets/landwave-logo.png";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-background to-background/80">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/10 via-background to-background" />
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/20 via-background to-background" />
+      <div className="absolute inset-0">
+        <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
+      </div>
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="flex flex-col items-center text-center space-y-8 animate-fade-in">
+        <div className="flex flex-col items-center text-center space-y-10 animate-fade-in">
           <img 
             src={landwaveLogo} 
             alt="Landwave Logo" 
-            className="h-24 md:h-32 w-auto mb-4 drop-shadow-2xl"
+            className="h-40 md:h-48 w-auto mb-6 drop-shadow-[0_0_50px_rgba(0,123,255,0.3)]"
           />
           
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight max-w-4xl">
-            Cria ondas no digital.
-          </h1>
-          
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl">
-            Na Landwave, criamos landing pages modernas que transformam visitantes em clientes.
-          </p>
+          <div className="space-y-6">
+            <h1 className="text-6xl md:text-8xl font-bold tracking-tight max-w-5xl bg-gradient-to-r from-foreground via-foreground to-foreground/70 bg-clip-text text-transparent">
+              Cria ondas no digital.
+            </h1>
+            
+            <p className="text-xl md:text-3xl text-muted-foreground max-w-3xl leading-relaxed">
+              Na Landwave, criamos landing pages modernas que transformam visitantes em clientes.
+            </p>
+          </div>
           
           <Button 
             variant="hero" 
             size="lg" 
-            className="text-lg px-8 py-6 mt-4"
+            className="text-lg px-10 py-7 mt-6 shadow-[0_0_50px_hsl(var(--primary-glow)/.4)]"
             asChild
           >
             <a href="mailto:gerallandwave@gmail.com">
               Quero a minha landing page
-              <ArrowRight className="ml-2 h-5 w-5" />
+              <ArrowRight className="ml-2 h-6 w-6" />
             </a>
           </Button>
           
-          <div className="pt-12 text-sm text-muted-foreground">
-            Design moderno · Conversão otimizada · Entrega rápida
+          <div className="pt-16 flex flex-wrap justify-center gap-8 text-sm text-muted-foreground">
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 rounded-full bg-primary" />
+              <span>Design moderno</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 rounded-full bg-accent" />
+              <span>Conversão otimizada</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 rounded-full bg-primary" />
+              <span>Entrega rápida</span>
+            </div>
           </div>
         </div>
       </div>
       
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-background via-background/50 to-transparent" />
     </section>
   );
 };
