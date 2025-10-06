@@ -36,15 +36,15 @@ const Footer = () => {
         </div>
         
         <div className="pt-8 border-t border-border/50 flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="text-sm text-muted-foreground">
-            © 2025 Landwave. Todos os direitos reservados.
-          </div>
           <a 
             href="mailto:gerallandwave@gmail.com" 
             className="text-sm text-muted-foreground hover:text-primary transition-colors"
           >
             gerallandwave@gmail.com
           </a>
+          <div className="text-sm text-muted-foreground">
+            © 2025 Landwave. Todos os direitos reservados.
+          </div>
         </div>
       </div>
     </footer>
