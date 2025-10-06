@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { Sparkles } from "lucide-react";
 import mockupSaas from "@/assets/mockup-saas.jpg";
 import mockupEcommerce from "@/assets/mockup-ecommerce.jpg";
 import mockupConsulting from "@/assets/mockup-consulting.jpg";
@@ -29,7 +30,8 @@ const Portfolio = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12 md:mb-20 space-y-4 md:space-y-6 px-4">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-xs md:text-sm text-primary font-medium mb-2 md:mb-4">
-            ✨ Portfolio
+            <Sparkles className="h-3 w-3 md:h-4 md:w-4" />
+            Portfolio
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">
             Resultados que fazem ondas.
