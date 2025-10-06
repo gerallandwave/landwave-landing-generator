@@ -1,8 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Sparkles } from "lucide-react";
 import mockupSaas from "@/assets/mockup-saas.jpg";
-import mockupEcommerce from "@/assets/mockup-ecommerce.jpg";
-import mockupConsulting from "@/assets/mockup-consulting.jpg";
+import mockupPromotional from "@/assets/mockup-promotional.jpg";
+import mockupProfessional from "@/assets/mockup-professional.jpg";
 
 const projects = [
   {
@@ -13,12 +13,12 @@ const projects = [
   {
     title: "Landing Page Promocional",
     category: "Lançamentos & Campanhas",
-    image: mockupEcommerce,
+    image: mockupPromotional,
   },
   {
     title: "Landing Page Profissional",
     category: "Serviços & Consultoria",
-    image: mockupConsulting,
+    image: mockupProfessional,
   },
 ];
 
