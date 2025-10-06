@@ -1,6 +1,6 @@
 import landwaveIcon from "@/assets/landwave-logo-icon.png";
 import { Button } from "@/components/ui/button";
-import { ArrowUp } from "lucide-react";
+import { ArrowUp, Mail } from "lucide-react";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -38,8 +38,9 @@ const Footer = () => {
         <div className="pt-8 border-t border-border/50 flex flex-col md:flex-row items-center justify-between gap-4">
           <a 
             href="mailto:gerallandwave@gmail.com" 
-            className="text-sm text-muted-foreground hover:text-primary transition-colors"
+            className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center gap-2"
           >
+            <Mail className="h-4 w-4" />
             gerallandwave@gmail.com
           </a>
           <div className="text-sm text-muted-foreground">
