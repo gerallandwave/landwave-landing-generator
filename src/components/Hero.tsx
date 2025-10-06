@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import landwaveLogo from "@/assets/landwave-logo.png";
+import landwaveIcon from "@/assets/landwave-icon.png";
 
 const Hero = () => {
   return (
@@ -13,16 +13,21 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col items-center text-center space-y-10 animate-fade-in">
-          <img 
-            src={landwaveLogo} 
-            alt="Landwave Logo" 
-            className="h-40 md:h-48 w-auto mb-6 drop-shadow-[0_0_50px_rgba(0,123,255,0.3)]"
-          />
+          <div className="flex items-center gap-4 mb-6">
+            <img 
+              src={landwaveIcon} 
+              alt="Landwave Icon" 
+              className="h-32 md:h-40 w-auto drop-shadow-[0_0_50px_rgba(0,123,255,0.4)]"
+            />
+            <h1 className="text-7xl md:text-8xl font-bold tracking-tight bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text text-transparent">
+              landwave
+            </h1>
+          </div>
           
           <div className="space-y-6">
-            <h1 className="text-6xl md:text-8xl font-bold tracking-tight max-w-5xl bg-gradient-to-r from-foreground via-foreground to-foreground/70 bg-clip-text text-transparent">
+            <h2 className="text-6xl md:text-8xl font-bold tracking-tight max-w-5xl bg-gradient-to-r from-foreground via-foreground to-foreground/70 bg-clip-text text-transparent">
               Cria ondas no digital.
-            </h1>
+            </h2>
             
             <p className="text-xl md:text-3xl text-muted-foreground max-w-3xl leading-relaxed">
               Na Landwave, criamos landing pages modernas que transformam visitantes em clientes.
