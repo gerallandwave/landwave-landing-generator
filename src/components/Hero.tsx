@@ -14,14 +14,14 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col items-center text-center space-y-10 animate-fade-in">
           <div className="flex items-center gap-4 mb-6">
+            <h1 className="text-7xl md:text-8xl font-bold tracking-tight bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text text-transparent">
+              landwave
+            </h1>
             <img 
               src={landwaveIcon} 
               alt="Landwave Icon" 
               className="h-32 md:h-40 w-auto drop-shadow-[0_0_50px_rgba(0,123,255,0.4)]"
             />
-            <h1 className="text-7xl md:text-8xl font-bold tracking-tight bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text text-transparent">
-              landwave
-            </h1>
           </div>
           
           <div className="space-y-6">
