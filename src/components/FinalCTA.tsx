@@ -1,7 +1,10 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Mail } from "lucide-react";
+import ContactFormDialog from "@/components/ContactFormDialog";
 
 const FinalCTA = () => {
+  const [isContactOpen, setIsContactOpen] = useState(false);
   return (
     <section className="py-40 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-accent/10 to-background" />
@@ -23,13 +26,13 @@ const FinalCTA = () => {
             variant="hero" 
             size="lg"
             className="text-base md:text-lg px-8 md:px-16 py-6 md:py-8 shadow-[0_0_60px_hsl(var(--primary-glow)/.4)] hover:shadow-[0_0_80px_hsl(var(--primary-glow)/.5)]"
-            asChild
+            onClick={() => setIsContactOpen(true)}
           >
-            <a href="mailto:gerallandwave@gmail.com" className="flex items-center gap-2 md:gap-3">
-              <Mail className="h-5 w-5 md:h-6 md:w-6" />
-              Fala connosco
-            </a>
+            <Mail className="h-5 w-5 md:h-6 md:w-6" />
+            Fala connosco
           </Button>
+          
+          <ContactFormDialog open={isContactOpen} onOpenChange={setIsContactOpen} />
           
           <div className="pt-8 md:pt-12 space-y-1 md:space-y-2">
             <div className="text-sm md:text-base text-muted-foreground">

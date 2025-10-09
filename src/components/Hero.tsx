@@ -1,8 +1,11 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import landwaveIcon from "@/assets/landwave-logo-icon.png";
+import ContactFormDialog from "@/components/ContactFormDialog";
 
 const Hero = () => {
+  const [isContactOpen, setIsContactOpen] = useState(false);
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/20 via-background to-background" />
@@ -38,13 +41,13 @@ const Hero = () => {
             variant="hero" 
             size="lg" 
             className="text-base md:text-lg px-6 md:px-10 py-5 md:py-7 mt-4 md:mt-6 shadow-[0_0_50px_hsl(var(--primary-glow)/.4)]"
-            asChild
+            onClick={() => setIsContactOpen(true)}
           >
-            <a href="mailto:gerallandwave@gmail.com" className="flex items-center gap-2">
-              Quero a minha landing page
-              <ArrowRight className="h-5 w-5 md:h-6 md:w-6" />
-            </a>
+            Quero a minha landing page
+            <ArrowRight className="h-5 w-5 md:h-6 md:w-6" />
           </Button>
+          
+          <ContactFormDialog open={isContactOpen} onOpenChange={setIsContactOpen} />
           
           <div className="pt-8 md:pt-16 flex flex-wrap justify-center gap-4 md:gap-8 text-xs md:text-sm text-muted-foreground px-4">
             <div className="flex items-center gap-2">

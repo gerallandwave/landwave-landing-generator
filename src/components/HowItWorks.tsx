@@ -1,5 +1,7 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { MessageSquare, Sparkles, Rocket } from "lucide-react";
+import ContactFormDialog from "@/components/ContactFormDialog";
 
 const steps = [
   {
@@ -23,6 +25,8 @@ const steps = [
 ];
 
 const HowItWorks = () => {
+  const [isContactOpen, setIsContactOpen] = useState(false);
+
   return (
     <section className="py-32 bg-gradient-to-b from-background via-muted/30 to-background relative overflow-hidden">
       <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
@@ -64,14 +68,14 @@ const HowItWorks = () => {
             variant="hero" 
             size="lg"
             className="shadow-[0_0_50px_hsl(var(--primary-glow)/.3)]"
-            asChild
+            onClick={() => setIsContactOpen(true)}
           >
-            <a href="mailto:gerallandwave@gmail.com">
-              Começa o teu projeto hoje
-            </a>
+            Começa o teu projeto hoje
           </Button>
         </div>
       </div>
+      
+      <ContactFormDialog open={isContactOpen} onOpenChange={setIsContactOpen} />
     </section>
   );
 };
