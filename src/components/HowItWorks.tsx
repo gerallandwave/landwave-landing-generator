@@ -1,7 +1,4 @@
-import { useState } from "react";
-import { Button } from "@/components/ui/button";
 import { MessageSquare, Sparkles, Rocket } from "lucide-react";
-import ContactFormDialog from "@/components/ContactFormDialog";
 
 const steps = [
   {
@@ -25,8 +22,6 @@ const steps = [
 ];
 
 const HowItWorks = () => {
-  const [isContactOpen, setIsContactOpen] = useState(false);
-
   return (
     <section className="py-32 bg-gradient-to-b from-background via-muted/30 to-background relative overflow-hidden">
       <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
@@ -64,18 +59,11 @@ const HowItWorks = () => {
         </div>
         
         <div className="text-center">
-          <Button 
-            variant="hero" 
-            size="lg"
-            className="shadow-[0_0_50px_hsl(var(--primary-glow)/.3)]"
-            onClick={() => setIsContactOpen(true)}
-          >
-            Começa o teu projeto hoje
-          </Button>
+          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            Simples, rápido e sem complicações. <span className="text-foreground font-semibold">É assim que criamos landing pages que convertem.</span>
+          </p>
         </div>
       </div>
-      
-      <ContactFormDialog open={isContactOpen} onOpenChange={setIsContactOpen} />
     </section>
   );
 };
