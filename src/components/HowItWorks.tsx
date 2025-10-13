@@ -31,10 +31,10 @@ const HowItWorks = () => {
         <div className="text-center mb-12 md:mb-20 space-y-4 md:space-y-6 px-4">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/20 text-xs md:text-sm text-accent font-medium mb-2 md:mb-4">
             <Rocket className="h-3 w-3 md:h-4 md:w-4" />
-            Como funciona
+            Processo
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">
-            O teu projeto, em 3 passos simples.
+            Como Criamos a Tua Landing Page em 3 Passos Simples
           </h2>
         </div>
         
@@ -48,7 +48,7 @@ const HowItWorks = () => {
                 </div>
               </div>
               <div className="text-3xl md:text-4xl font-bold text-primary">{step.number}</div>
-              <h3 className="text-xl md:text-2xl font-semibold">{step.title}</h3>
+              <h3 className="text-xl md:text-2xl font-bold">{step.title}</h3>
               <p className="text-muted-foreground leading-relaxed text-sm md:text-base">{step.description}</p>
               
               {index < steps.length - 1 && (

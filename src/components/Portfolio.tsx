@@ -31,10 +31,10 @@ const Portfolio = () => {
         <div className="text-center mb-12 md:mb-20 space-y-4 md:space-y-6 px-4">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-xs md:text-sm text-primary font-medium mb-2 md:mb-4">
             <Sparkles className="h-3 w-3 md:h-4 md:w-4" />
-            Portfolio
+            Exemplos
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">
-            Resultados que fazem ondas.
+            Exemplos de Landing Pages Profissionais que Geram Resultados
           </h2>
           <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Landing pages que convertem visitantes em clientes reais.
@@ -57,7 +57,7 @@ const Portfolio = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-300" />
                 </div>
                 <div className="p-4 md:p-6 space-y-1 md:space-y-2">
-                  <h3 className="text-lg md:text-xl font-semibold">{project.title}</h3>
+                  <h3 className="text-lg md:text-xl font-bold">{project.title}</h3>
                   <p className="text-xs md:text-sm text-muted-foreground">{project.category}</p>
                 </div>
               </CardContent>
