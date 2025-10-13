@@ -22,15 +22,15 @@ const Hero = () => {
               alt="Landwave - Landing Pages Modernas" 
               className="h-20 md:h-32 lg:h-40 w-auto drop-shadow-[0_0_50px_rgba(0,123,255,0.4)]"
             />
-            <div className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text text-transparent">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text text-transparent">
               landwave
-            </div>
+            </h1>
           </div>
           
           <div className="space-y-4 md:space-y-6">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight max-w-5xl bg-gradient-to-r from-foreground via-foreground to-foreground/70 bg-clip-text text-transparent">
-              Landing Pages Modernas que Transformam Visitantes em Clientes
-            </h1>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight max-w-5xl bg-gradient-to-r from-foreground via-foreground to-foreground/70 bg-clip-text text-transparent">
+              Cria ondas no digital.
+            </h2>
             
             <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl leading-relaxed px-4">
               Na Landwave, criamos landing pages modernas que transformam visitantes em clientes.

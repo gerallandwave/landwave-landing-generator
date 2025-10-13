@@ -28,10 +28,10 @@ const WhatWeDo = () => {
         <div className="text-center mb-12 md:mb-20 space-y-4 md:space-y-6 px-4">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-xs md:text-sm text-primary font-medium mb-2 md:mb-4">
             <Zap className="h-3 w-3 md:h-4 md:w-4" />
-            Serviços
+            O que fazemos
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">
-            Criação de Landing Pages com Design Responsivo e Copy Estratégica
+            Landing pages que convertem.
           </h2>
           <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Criamos páginas otimizadas para conversão, com design moderno e copy estratégica. 
@@ -49,7 +49,7 @@ const WhatWeDo = () => {
                 <div className="w-16 h-16 md:w-20 md:h-20 mx-auto rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-[0_10px_40px_-10px_hsl(var(--primary)/.5)]">
                   <service.icon className="h-8 w-8 md:h-10 md:w-10 text-primary-foreground" />
                 </div>
-                <h3 className="text-xl md:text-2xl font-bold">{service.title}</h3>
+                <h3 className="text-xl md:text-2xl font-semibold">{service.title}</h3>
                 <p className="text-sm md:text-base text-muted-foreground leading-relaxed">{service.description}</p>
               </CardContent>
             </Card>
