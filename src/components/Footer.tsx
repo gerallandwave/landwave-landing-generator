@@ -28,7 +28,7 @@ const Footer = () => {
             variant="outline" 
             size="lg"
             onClick={scrollToTop}
-            className="gap-2 hover:bg-gradient-to-r hover:from-primary hover:to-primary/80 hover:text-primary-foreground border-primary/50 transition-all duration-200 hover:scale-105"
+            className="gap-2"
           >
             <ArrowUp className="h-4 w-4" />
             Voltar ao início
