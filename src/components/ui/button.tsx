@@ -9,13 +9,13 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-gradient-to-r from-primary to-accent text-primary-foreground hover:shadow-[0_0_30px_hsl(var(--primary-glow)/.4)] hover:scale-105 transition-all duration-300",
+        default: "bg-gradient-to-r from-primary to-accent text-primary-foreground hover:shadow-[0_0_30px_hsl(var(--primary-glow)/.4)] hover:scale-105 transition-all duration-300 relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-r before:from-primary-glow before:to-accent before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-300 before:-z-10",
         destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         outline: "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        hero: "bg-gradient-to-r from-primary to-accent text-primary-foreground hover:shadow-[0_0_30px_hsl(var(--primary-glow)/.4)] transition-all duration-300 hover:scale-105",
+        hero: "bg-gradient-to-r from-primary to-accent text-primary-foreground hover:shadow-[0_0_30px_hsl(var(--primary-glow)/.4)] transition-all duration-300 hover:scale-105 relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-r before:from-primary-glow before:to-accent before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-300 before:-z-10",
       },
       size: {
         default: "h-10 px-4 py-2",
