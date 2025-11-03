@@ -35,14 +35,22 @@ const Footer = () => {
           </Button>
         </div>
         
-        <div className="pt-6 md:pt-8 border-t border-border/50 flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4 px-4">
-          <a 
-            href="mailto:gerallandwave@gmail.com" 
-            className="text-xs md:text-sm text-muted-foreground hover:text-primary transition-colors flex items-center gap-2"
-          >
-            <Mail className="h-3 w-3 md:h-4 md:w-4" />
-            gerallandwave@gmail.com
-          </a>
+        <div className="pt-6 md:pt-8 border-t border-border/50 space-y-4 px-4">
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs md:text-sm">
+            <a 
+              href="mailto:gerallandwave@gmail.com" 
+              className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2"
+            >
+              <Mail className="h-3 w-3 md:h-4 md:w-4" />
+              gerallandwave@gmail.com
+            </a>
+            <a href="/politica-privacidade" className="text-muted-foreground hover:text-primary transition-colors">
+              Política de Privacidade
+            </a>
+            <a href="/politica-cookies" className="text-muted-foreground hover:text-primary transition-colors">
+              Política de Cookies
+            </a>
+          </div>
           <div className="text-xs md:text-sm text-muted-foreground text-center">
             © 2025 Landwave. Todos os direitos reservados.
           </div>
