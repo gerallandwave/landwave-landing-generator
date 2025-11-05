@@ -1,6 +1,7 @@
 import landwaveIcon from "@/assets/landwave-logo-icon.png";
 import { Button } from "@/components/ui/button";
 import { ArrowUp, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -44,12 +45,12 @@ const Footer = () => {
               <Mail className="h-3 w-3 md:h-4 md:w-4" />
               gerallandwave@gmail.com
             </a>
-            <a href="/politica-privacidade" className="text-muted-foreground hover:text-primary transition-colors">
+            <Link to="/politica-privacidade" className="text-muted-foreground hover:text-primary transition-colors">
               Política de Privacidade
-            </a>
-            <a href="/politica-cookies" className="text-muted-foreground hover:text-primary transition-colors">
+            </Link>
+            <Link to="/politica-cookies" className="text-muted-foreground hover:text-primary transition-colors">
               Política de Cookies
-            </a>
+            </Link>
           </div>
           <div className="text-xs md:text-sm text-muted-foreground text-center">
             © 2025 Landwave. Todos os direitos reservados.
