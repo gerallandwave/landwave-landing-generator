@@ -29,8 +29,8 @@ const HowItWorks = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12 md:mb-20 space-y-4 md:space-y-6 px-4">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/20 text-xs md:text-sm text-accent font-medium mb-2 md:mb-4">
-            <Rocket className="h-3 w-3 md:h-4 md:w-4" />
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30 text-xs md:text-sm text-foreground font-medium mb-2 md:mb-4">
+            <Rocket className="h-3 w-3 md:h-4 md:w-4 text-primary" />
             Como funciona
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">

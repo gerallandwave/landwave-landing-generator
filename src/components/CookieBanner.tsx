@@ -44,11 +44,11 @@ const CookieBanner = () => {
                     o uso de todos os cookies. Pode gerir as suas preferências a qualquer momento.
                   </p>
                   <div className="flex flex-wrap gap-2 mt-3">
-                    <Link to="/politica-privacidade" className="text-xs text-primary hover:underline">
+                    <Link to="/politica-privacidade" className="text-xs text-foreground underline hover:text-primary">
                       Política de Privacidade
                     </Link>
                     <span className="text-xs text-muted-foreground">•</span>
-                    <Link to="/politica-cookies" className="text-xs text-primary hover:underline">
+                    <Link to="/politica-cookies" className="text-xs text-foreground underline hover:text-primary">
                       Política de Cookies
                     </Link>
                   </div>
@@ -59,6 +59,7 @@ const CookieBanner = () => {
                 size="icon"
                 onClick={rejectCookies}
                 className="flex-shrink-0"
+                aria-label="Fechar banner de cookies"
               >
                 <X className="h-4 w-4" />
               </Button>
